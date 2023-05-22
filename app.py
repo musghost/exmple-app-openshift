@@ -12,7 +12,8 @@ def greet():
     age = request.form['age']
     city = request.form['city']
     gender = request.form['gender']
-    return render_template('greeting.html', name=name, age=age, city=city, gender=gender)
+    dob = request.form['dob']
+    return render_template('greeting.html', name=name, age=age, city=city, gender=gender, dob=dob)
 
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0")
