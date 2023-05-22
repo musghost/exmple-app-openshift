@@ -10,7 +10,7 @@
       <div class="row">
         <div class="col"></div>
         <div class="col">
-          <h2>Enter Your Name and Age, my friends</h2>
+          <h2>Enter Your Name, Age, City and Gender/h2>
           <form action="{{ url_for('greet') }}" method="post">
             <div class="mb-3">
               <label for="name" class="form-label">Name:</label>
@@ -19,6 +19,19 @@
             <div class="mb-3">
               <label for="age" class="form-label">Age:</label>
               <input type="number" class="form-control" id="age" name="age" required>
+            </div>
+            <div class="mb-3">
+              <label for="city" class="form-label">Name:</label>
+              <input type="text" class="form-control" id="city" name="city" required>
+            </div>
+            <div class="dropdown">
+              <label for="gender" class="form-label">What is your Gender?</label>
+              <select class="form-control" id="gender" name="gender" required>
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="other">other</option>
+              </select>
+            </div>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
