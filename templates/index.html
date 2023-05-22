@@ -10,7 +10,7 @@
       <div class="row">
         <div class="col"></div>
         <div class="col">
-          <h2>Enter Your Name, Age, City and Gender/h2>
+          <h2>Enter Your Name, Age, City and Gender</h2>
           <form action="{{ url_for('greet') }}" method="post">
             <div class="mb-3">
               <label for="name" class="form-label">Name:</label>
@@ -27,6 +27,7 @@
             <div class="dropdown">
               <label for="gender" class="form-label">What is your Gender?</label>
               <select class="form-control" id="gender" name="gender" required>
+                <option value=""> </option>
                 <option value="male">male</option>
                 <option value="female">female</option>
                 <option value="other">other</option>
