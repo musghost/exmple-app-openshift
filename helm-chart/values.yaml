@@ -1,0 +1,15 @@
+replicaCount: 1
+
+image:
+  repository: dockermd/my-python-app:v1 
+
+port: 5000
+
+configmapData:
+  app: python
+  env: dev
+
+resources:
+  limits:
+    memory: 500M
+    cpu: 0.5

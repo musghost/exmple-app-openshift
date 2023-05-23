@@ -1,0 +1,9 @@
+replicaCount: 4
+
+resources:
+  limits:
+    cpu: 0.1
+
+configmapData:
+  user: adminprod
+  password: strongpassword
