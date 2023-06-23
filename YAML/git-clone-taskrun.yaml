@@ -1,0 +1,11 @@
+apiVersion: tekton.dev/v1beta1
+kind: TaskRun
+metadata:
+  name: git-clone-taskrun
+spec:
+  taskRef:
+    name: git-clone-task
+  params:
+    - name: git-clone-url
+      value: git@github.com:jo8s/exmple-app-openshift.git 
+
