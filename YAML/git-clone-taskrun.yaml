@@ -8,4 +8,5 @@ spec:
   params:
     - name: git-clone-url
       value: git@github.com:jo8s/exmple-app-openshift.git 
-
+    - name: revision
+      value: main

@@ -7,9 +7,15 @@ spec:
     - name: git-clone-url
       description: The URL of the Git repository to clone
       type: string
+    - name: revision
+      type: string
+      default: "master"
   steps:
     - name: git-clone-step
       image: alpine/git
       script: |
+        #!/usr/bin/env sh
         git clone $(params.git-clone-url)
+        git checkout $(params.revision)
+
 
