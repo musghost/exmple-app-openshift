@@ -11,5 +11,5 @@ spec:
     - name: git-clone-step
       image: alpine/git
       script: |
-        git clone $(params.repository-url)
+        git clone $(params.git-clone-url)
 
